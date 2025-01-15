@@ -1,0 +1,51 @@
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+.cm-s-xq-dark.CodeMirror {
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* Remove the right border from the gutters */
+.cm-s-xq-dark .CodeMirror-gutters {
+    border-right: none;
+}
+
+/* (Optional) Remove any additional borders or shadows */
+.cm-s-xq-dark .CodeMirror-scroll {
+    border: none;
+    box-shadow: none;
+}
+
+body .copilotKitWindow {
+  width: 400px !important;
+  max-width: 90vw !important;
+}
+
+body .copilotKitResponseButton {
+    background-color: var(--copilot-kit-response-button-background-color);
+    border: 1px solid var(--copilot-kit-separator-color);
+    border-radius: 5px;
+    color: var(--copilot-kit-response-button-color);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    height: 32px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    white-space: nowrap;
+    margin-top: 15px;
+  }
+

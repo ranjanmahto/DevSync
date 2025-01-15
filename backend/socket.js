@@ -7,7 +7,7 @@ let io;
 function initializeSocket(server) {
     io = new Server(server,{
         cors: {
-            origin: "http://localhost:3001",
+            origin: "https://devsync-frontend-5b3e.onrender.com",
             methods: ["GET", "POST"],
             credentials: true
         }

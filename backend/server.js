@@ -10,7 +10,7 @@ const connectDB= require('./config/database');
 const codeRouter = require('./routes/codeRouter');
 
 app.use(cors({
-    origin: ['http://localhost:3001'],
+    origin: ['https://devsync-frontend-5b3e.onrender.com'],
     credentials: true
 }))
 app.use(express.json());

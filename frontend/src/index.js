@@ -3,18 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import SocketProvider from './context/SocketContext';
-import { CopilotKit } from "@copilotkit/react-core";
-
-// import reportWebVitals from './reportWebVitals';
-const apiKey= process.env.REACT_APP_COPILOTKIT_API_KEY;
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
     <SocketProvider>
-      <CopilotKit publicApiKey={apiKey} > 
+    
             <App />
-          </CopilotKit>
+         
    </SocketProvider>
   // </React.StrictMode>
 );
